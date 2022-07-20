@@ -29,7 +29,7 @@ const onSearchFormSubmit = event => {
   pixebayApi
     .fetchPhotosByQuery()
     .then(response => {
-      if (response.data.hits.length === 0) {
+      if (response.data.hits.length === 0 || inputValue === '') {
         galleryEl.innerHTML = '';
         loadMoreBtnel.classList.add('is-hidden');
 
