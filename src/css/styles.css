@@ -12,38 +12,79 @@ body {
   line-height: 1.5;
 }
 
-#search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+img{
+  display: block;
 }
-.country-list{
-  padding: 0;
-}
-.item__country{
+
+
+
+.search-form{
   display: flex;
+  justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, #003399 0%, #66ccff 100%);
+  height: 65px;
 }
-.item__txt{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 15px;
-  margin-left: 20px;
+input{
+  border-radius: 20px;
+  padding: 10px;
+  width: 250px
 }
+input:focus{
+  background-color: lightblue;
+}
+
+.search-button{
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+.search-button:hover,
+.search-button:focus{
+  background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
+}
+
+.load-more{
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.load-more:hover,
+.load.more:focus{
+  box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.3);
+  background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
+}
+
+.is-hidden{
+ display: none;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-card{
+  width: 100%;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-bottom: 10px;
+}
+
+.gallery {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 .info{
   display: flex;
-  align-items: center;
 }
-.info__img{
-  margin-right: 20px;
+
+.info-item {
+text-align: center;
+font-size: 12px;
 }
-.info__country{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-}
-.info__txt{
-  font-family: 'Times New Roman', Times, serif;
-}
+
