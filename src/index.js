@@ -34,7 +34,7 @@ const onSearchFormSubmit = event => {
         loadMoreBtnel.classList.add('is-hidden');
 
         Notiflix.Notify.failure(
-          'Sorry, there are no images matching your search query. Please try again.'
+          `Sorry, there are no images matching your search query "${inputValue}". Please try again.`
         );
         return;
       } else {
