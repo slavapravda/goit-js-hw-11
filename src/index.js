@@ -60,7 +60,7 @@ const onLoadMoreBtnClick = event => {
   pixebayApi
     .fetchPhotosByQuery()
     .then(response => {
-      if (response.data.hits.length < 40) {
+      if (response.data.hits.length < pixebayApi.perPage) {
         loadMoreBtnel.classList.add('is-hidden');
         Notiflix.Notify.info(
           'We are sorry, but you have reached the end of search results.'
