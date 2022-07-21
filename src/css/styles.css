@@ -70,14 +70,15 @@ input:focus{
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-bottom: 10px;
 }
-
+.photo-card:hover{
+  transform: scale(0.9);
+}
 .gallery {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 .info{
   display: flex;
